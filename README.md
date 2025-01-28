@@ -50,7 +50,7 @@ Next, I compute the K-corrections, which account for the effects of redshift on 
 
 To compute K-corrections, the magnitudes need to be computed first. To do this, I use the .dat files inside of the SPECTRA folder, where each file contains four columns:
 - column 1: wavlength [Å]
-- column 2: flux corrected for reddening [$10^{-17}$ erg/${cm}^{2}$/s/Å]
+- column 2: flux corrected for reddening [ $$10^{-17} \text{erg/cm}^2/\text{s/Å}$$ ]
 - column 3: observed flux [$10^{-17} \text{erg/cm}^2/\text{s/Å}$]
 - column 4: flux error [$10^{-17} \text{erg/cm}^2/\text{s/Å}$]
 
