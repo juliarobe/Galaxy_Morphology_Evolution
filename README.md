@@ -50,11 +50,52 @@ Next, I compute the K-corrections, which account for the effects of redshift on 
 
 To compute K-corrections, the magnitudes need to be computed first. To do this, I use the .dat files inside of the SPECTRA folder, where each file contains four columns:
 - column 1: wavlength [Angstrom]
-- column 2: flux corrected for reddening [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
-- column 3: observed flux [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
-- column 4: flux error [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
+- column 2: flux corrected for reddening [$$10^{-17} \text{erg/cm}^{2}/\text{s/Å}$$]
+- column 3: observed flux [$$10^{-17} \text{erg/cm}^{2}/\text{s/Å}$$]
+- column 4: flux error [$$10^{-17} \text{erg/cm}^{2}/\text{s/Å}$$]
 
 Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/instruments/imager/)">SDSS g-band and r-band filters</a>, I interpolate the filter data so I can estimate the filter response at the observed wavelengths of the spectral data. Then finally, I can compute the observed magnitudes. I use the same technique to calculate the magnitude in the restframe, however, before interpolating, I calculate the restframe wavelength values with this formula: $$\lambda_{rest} = \lambda_{obs} / (1 + z)$$. Once I have the observed magnitudes and the magnitudes in the restframe, I can compute the K-correction, since $$K = m_{obs} - m_{rest}$$.
+
+## K-correction values versus redshift plots:
+
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.image-grid figcaption {
+  text-align: center; /* center the caption */
+  font-style: italic; /* italicize the caption */
+  font-size: 14px; /* reduce the font size */
+  margin-top: 5px; /* add some space between the image and caption */
+}
+</style>
+
+<div class="image-grid">
+  <figure>
+    <img class="img-fluid" src="./images/Kcorr_fracdev_1_gband.PNG" alt="G-Band De Vaucouleurs Dominated">
+    <figcaption>De Vaucouleurs Dominated (fracdev = 1) G-Band</figcaption>
+  </figure>
+  <figure>
+    <img class="img-fluid" src="./images/Kcorr_fracdev_1_rband.PNG" alt="R-Band De Vaucouleurs Dominated">
+    <figcaption>De Vaucouleurs Dominated (fracdev = 1) R-Band</figcaption>
+  </figure>
+  <figure>
+    <img class="img-fluid" src="./images/Kcorr_fracdev_LT1_gband.PNG" alt="G-Band Mixed De Vaucouleurs and Exponential Light Distribution">
+    <figcaption>Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band</figcaption>
+  </figure>
+  <figure>
+    <img class="img-fluid" src="./images/Kcorr_fracdev_LT1_rband.PNG" alt="R-Band Mixed De Vaucouleurs and Exponential Light Distribution">
+    <figcaption>Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band</figcaption>
+  </figure>
+</div>
 
 ## Fit interpolating functions for K versus Z to compute the absolute magnitudes
 Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
