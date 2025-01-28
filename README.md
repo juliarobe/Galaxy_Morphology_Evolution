@@ -38,9 +38,9 @@ WHERE
 
 After querying the SDSS database with SQL to retrieve galaxy parameters, I visually inspected the following samples of galaxy images using SDSS's SkyServer Explorer:
 <h2 style="text-align: center;">Sample A: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="./sampleA_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="./images/sampleA_color_images.PNG" width="500">
 <h2 style="text-align: center;">Sample B: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="./sampleB_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="./images/sampleB_color_images.PNG" width="500">
 
 Sample A's galaxies appear redder in color, while Sample B's appear more blue. Sample A's galaxies also seem more dense with very little structure, while Sample B's are less dense and some appear to have more structure. This tells us that Sample A most likely consists of early-type galaxies such as elliptical and lenticular galaxies (as expected), while Sample B most likely contains later type galaxies like spiral galaxies (also as expected). 
 
@@ -54,16 +54,18 @@ To compute K-corrections, the magnitudes need to be computed first. To do this, 
 - column 3: observed flux [ $$10^{-17} \text{erg/cm}^2/\text{s/Å}$$ ]
 - column 4: flux error [ $$10^{-17} \text{erg/cm}^2/\text{s/Å}$$ ]
 
+I also use the SPECTRA_parameters.dat file, which stores the following quantities for each galaxy: Index, ra, dec, z, fracdev_g, petroR50_r, petroR90_r, eclass, and myindex. Index identifies the "spec-*.dat" file in the SPECTRA folder.
+
 Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/instruments/imager/)">SDSS g-band and r-band filters</a>, I interpolate the filter data so I can estimate the filter response at the observed wavelengths of the spectral data. Then finally, I can compute the observed magnitudes. I use the same technique to calculate the magnitude in the restframe, however, before interpolating, I calculate the restframe wavelength values with this formula: $$\lambda_{rest} = \lambda_{obs} / (1 + z)$$. Once I have the observed magnitudes and the magnitudes in the restframe, I can compute the K-correction, since $$K = m_{obs} - m_{rest}$$.
 
 ## K-correction values versus redshift plots:
 
 | Image | Description |
 | --- | --- |
-| ![G-Band De Vaucouleurs Dominated](./Kcorr_fracdev_1_gband.PNG) | DeVaucouleurs Dominated (fracdev = 1) G-Band |
-| ![R-Band De Vaucouleurs Dominated](./Kcorr_fracdev_1_rband.PNG) | DeVaucouleurs Dominated (fracdev = 1) R-Band |
-| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./Kcorr_fracdev_LT1_gband.PNG) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
-| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./Kcorr_fracdev_LT1_rband.PNG) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
+| ![G-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_gband.png) | DeVaucouleurs Dominated (fracdev = 1) G-Band |
+| ![R-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_rband.png) | DeVaucouleurs Dominated (fracdev = 1) R-Band |
+| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_gband.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
+| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_rband.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
 
 ## Fit interpolating functions for K versus Z to compute the absolute magnitudes
 Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
@@ -73,22 +75,22 @@ Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z)
 
 <div class="image-grid">
   <div>
-    <img class="img-fluid" src="./abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
+    <img class="img-fluid" src="./images/abs_mag_sampleA.png" alt="Sample A Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
+    <img class="img-fluid" src="./images/abs_mag_sampleB.png" alt="Sample B Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
+    <img class="img-fluid" src="./images/size_dist_sampleA.png" alt="Sample A Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
+    <img class="img-fluid" src="./images/size_dist_sampleB.png" alt="Sample B Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
+    <img class="img-fluid" src="./images/surface_brightness_sampA.png" alt="Sample A Surface Brightness Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
+    <img class="img-fluid" src="./images/surface_brightness_sampB.png" alt="Sample B Surface Brightness Distribution">
   </div>
 </div>
 
