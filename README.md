@@ -37,10 +37,10 @@ WHERE
 ```
 
 After querying the SDSS database with SQL to retrieve galaxy parameters, I visually inspected the following samples of galaxy images using SDSS's SkyServer Explorer:
-<!--<h2 style="text-align: center;">Sample A: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../img/sampleA_color_images.PNG" width="500">
+<h2 style="text-align: center;">Sample A: </h2>
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="../images/sampleA_color_images.PNG" width="500">
 <h2 style="text-align: center;">Sample B: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../img/sampleA_color_images.PNG" width="500">-->
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="../images/sampleB_color_images.PNG" width="500">
 
 
 
