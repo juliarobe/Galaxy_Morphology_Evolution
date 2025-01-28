@@ -61,9 +61,9 @@ Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/
 | Image | Description |
 | --- | --- |
 | ![G-Band De Vaucouleurs Dominated](./Kcorr_fracdev_1_gband.PNG) | De Vaucouleurs Dominated (fracdev = 1) G-Band |
-| ![R-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_rband.PNG) | De Vaucouleurs Dominated (fracdev = 1) R-Band |
-| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_gband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
-| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_rband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
+| ![R-Band De Vaucouleurs Dominated](./Kcorr_fracdev_1_rband.PNG) | De Vaucouleurs Dominated (fracdev = 1) R-Band |
+| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./Kcorr_fracdev_LT1_gband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
+| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./Kcorr_fracdev_LT1_rband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
 
 ## Fit interpolating functions for K versus Z to compute the absolute magnitudes
 Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
