@@ -77,22 +77,22 @@ Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z)
 
 <div class="image-grid">
   <div>
-    <img class="img-fluid" src="../abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
+    <img class="img-fluid" src="./abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
+    <img class="img-fluid" src="./abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
+    <img class="img-fluid" src="./size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
+    <img class="img-fluid" src="./size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
+    <img class="img-fluid" src="./surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
+    <img class="img-fluid" src="./surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
   </div>
 </div>
 
