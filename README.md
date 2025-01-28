@@ -58,44 +58,12 @@ Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/
 
 ## K-correction values versus redshift plots:
 
-<style>
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-}
-
-.image-grid figcaption {
-  text-align: center; /* center the caption */
-  font-style: italic; /* italicize the caption */
-  font-size: 14px; /* reduce the font size */
-  margin-top: 5px; /* add some space between the image and caption */
-}
-</style>
-
-<div class="image-grid">
-  <figure>
-    <img class="img-fluid" src="./images/Kcorr_fracdev_1_gband.PNG" alt="G-Band De Vaucouleurs Dominated">
-    <figcaption>De Vaucouleurs Dominated (fracdev = 1) G-Band</figcaption>
-  </figure>
-  <figure>
-    <img class="img-fluid" src="./images/Kcorr_fracdev_1_rband.PNG" alt="R-Band De Vaucouleurs Dominated">
-    <figcaption>De Vaucouleurs Dominated (fracdev = 1) R-Band</figcaption>
-  </figure>
-  <figure>
-    <img class="img-fluid" src="./images/Kcorr_fracdev_LT1_gband.PNG" alt="G-Band Mixed De Vaucouleurs and Exponential Light Distribution">
-    <figcaption>Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band</figcaption>
-  </figure>
-  <figure>
-    <img class="img-fluid" src="./images/Kcorr_fracdev_LT1_rband.PNG" alt="R-Band Mixed De Vaucouleurs and Exponential Light Distribution">
-    <figcaption>Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band</figcaption>
-  </figure>
-</div>
+| Image | Description |
+| --- | --- |
+| ![G-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_gband.PNG) | De Vaucouleurs Dominated (fracdev = 1) G-Band |
+| ![R-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_rband.PNG) | De Vaucouleurs Dominated (fracdev = 1) R-Band |
+| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_gband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
+| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_rband.PNG) | Mixed De Vaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
 
 ## Fit interpolating functions for K versus Z to compute the absolute magnitudes
 Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
