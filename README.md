@@ -38,9 +38,9 @@ WHERE
 
 After querying the SDSS database with SQL to retrieve galaxy parameters, I visually inspected the following samples of galaxy images using SDSS's SkyServer Explorer:
 <h2 style="text-align: center;">Sample A: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../images/sampleA_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="../sampleA_color_images.PNG" width="500">
 <h2 style="text-align: center;">Sample B: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../images/sampleB_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="../sampleB_color_images.PNG" width="500">
 
 Sample A's galaxies appear redder in color, while Sample B's appear more blue. Sample A's galaxies also seem more dense with very little structure, while Sample B's are less dense and some appear to have more structure. This tells us that Sample A most likely consists of early-type galaxies such as elliptical and lenticular galaxies (as expected), while Sample B most likely contains later type galaxies like spiral galaxies (also as expected). 
 
@@ -77,22 +77,22 @@ Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z)
 
 <div class="image-grid">
   <div>
-    <img class="img-fluid" src="../images/abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
+    <img class="img-fluid" src="../abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../images/abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
+    <img class="img-fluid" src="../abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../images/size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
+    <img class="img-fluid" src="../size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../images/size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
+    <img class="img-fluid" src="../size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../images/surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
+    <img class="img-fluid" src="../surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="../images/surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
+    <img class="img-fluid" src="../surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
   </div>
 </div>
 
