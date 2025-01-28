@@ -62,10 +62,10 @@ Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/
 
 | Image | Description |
 | --- | --- |
-| ![G-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_gband.png) | DeVaucouleurs Dominated (fracdev = 1) G-Band |
-| ![R-Band De Vaucouleurs Dominated](./images/Kcorr_fracdev_1_rband.png) | DeVaucouleurs Dominated (fracdev = 1) R-Band |
-| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_gband.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
-| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/Kcorr_fracdev_LT1_rband.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
+| ![G-Band De Vaucouleurs Dominated](./images/kcorr_g_fracdev1.png) | DeVaucouleurs Dominated (fracdev = 1) G-Band |
+| ![R-Band De Vaucouleurs Dominated](./images/kcorr_r_fracdev1.png) | DeVaucouleurs Dominated (fracdev = 1) R-Band |
+| ![G-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/kcorr_g_fracdevLT1.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) G-Band |
+| ![R-Band Mixed De Vaucouleurs and Exponential Light Distribution](./images/kcorr_r_fracdevLT1.png) | Mixed DeVaucouleurs and Exponential Light Distribution (fracdev < 1) R-Band |
 
 ## Fit interpolating functions for K versus Z to compute the absolute magnitudes
 Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
@@ -81,16 +81,16 @@ Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z)
     <img class="img-fluid" src="./images/abs_mag_sampleB.png" alt="Sample B Absolute Magnitude Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./images/size_dist_sampleA.png" alt="Sample A Physical Size Distribution">
+    <img class="img-fluid" src="./images/phys_size_sampleA.png" alt="Sample A Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./images/size_dist_sampleB.png" alt="Sample B Physical Size Distribution">
+    <img class="img-fluid" src="./images/phys_size_sampleB.png" alt="Sample B Physical Size Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./images/surface_brightness_sampA.png" alt="Sample A Surface Brightness Distribution">
+    <img class="img-fluid" src="./images/sb_sampleA.png" alt="Sample A Surface Brightness Distribution">
   </div>
   <div>
-    <img class="img-fluid" src="./images/surface_brightness_sampB.png" alt="Sample B Surface Brightness Distribution">
+    <img class="img-fluid" src="./images/sb_sampleB.png" alt="Sample B Surface Brightness Distribution">
   </div>
 </div>
 
