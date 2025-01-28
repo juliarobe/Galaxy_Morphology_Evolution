@@ -38,9 +38,9 @@ WHERE
 
 After querying the SDSS database with SQL to retrieve galaxy parameters, I visually inspected the following samples of galaxy images using SDSS's SkyServer Explorer:
 <h2 style="text-align: center;">Sample A: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../sampleA_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="./sampleA_color_images.PNG" width="500">
 <h2 style="text-align: center;">Sample B: </h2>
-<img class="img-fluid" style="display: block; margin: 0 auto;" src="../sampleB_color_images.PNG" width="500">
+<img class="img-fluid" style="display: block; margin: 0 auto;" src="./sampleB_color_images.PNG" width="500">
 
 Sample A's galaxies appear redder in color, while Sample B's appear more blue. Sample A's galaxies also seem more dense with very little structure, while Sample B's are less dense and some appear to have more structure. This tells us that Sample A most likely consists of early-type galaxies such as elliptical and lenticular galaxies (as expected), while Sample B most likely contains later type galaxies like spiral galaxies (also as expected). 
 
