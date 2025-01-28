@@ -42,9 +42,59 @@ After querying the SDSS database with SQL to retrieve galaxy parameters, I visua
 <h2 style="text-align: center;">Sample B: </h2>
 <img class="img-fluid" style="display: block; margin: 0 auto;" src="../images/sampleB_color_images.PNG" width="500">
 
+Sample A's galaxies appear redder in color, while Sample B's appear more blue. Sample A's galaxies also seem more dense with very little structure, while Sample B's are less dense and some appear to have more structure. This tells us that Sample A most likely consists of early-type galaxies such as elliptical and lenticular galaxies (as expected), while Sample B most likely contains later type galaxies like spiral galaxies (also as expected). 
 
 
-Sample A's galaxies appear redder in color, while Sample B's appear more blue. Sample A's galaxies also seem more dense with very little structure, while Sample B's are less dense and some appear to have more structure. This tells us that Sample A most likely consists of early-type galaxies such as elliptical and lenticular galaxies, while Sample B most likely contains later type galaxies like spiral galaxies. 
+## K-correction computation 
+Next, I compute the K-corrections, which account for the effects of redshift on galaxy brightness, by analyzing flux data from the SDSS database and applying filter responses and reddening corrections to galaxy spectra. This involved interpolating filter data to estimate responses at specific wavelengths, allowing me to visualize and understand the results.
 
-Next, I computed K-corrections, which account for the effects of redshift on galaxy brightness, by analyzing flux data from the SDSS database and applying filter responses and reddening corrections to galaxy spectra. This involved interpolating filter data to estimate responses at specific wavelengths, allowing me to visualize and understand the results.
+To compute K-corrections, the magnitudes need to be computed first. To do this, I use the .dat files inside of the SPECTRA folder, where each file contains four columns:
+- column 1: wavlength [Angstrom]
+- column 2: flux corrected for reddening [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
+- column 3: observed flux [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
+- column 4: flux error [$$10^{-17} erg/cm^{2}/s/Angstrom$$]
+
+Using these spectra, as well as the <a href="[URL](https://classic.sdss.org/dr7/instruments/imager/)">SDSS g-band and r-band filters</a>, I interpolate the filter data so I can estimate the filter response at the observed wavelengths of the spectral data. Then finally, I can compute the observed magnitudes. I use the same technique to calculate the magnitude in the restframe, however, before interpolating, I calculate the restframe wavelength values with this formula: $$\lambda_{rest} = \lambda_{obs} / (1 + z)$$. Once I have the observed magnitudes and the magnitudes in the restframe, I can compute the K-correction, since $$K = m_{obs} - m_{rest}$$.
+
+## Fit interpolating functions for K versus Z to compute the absolute magnitudes
+Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z) fits to compute the absolute magnitudes, physical sizes, and the surface brightness of the galaxies.
+
+## Resulting Distributions:
+
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<div class="image-grid">
+  <div>
+    <img class="img-fluid" src="../images/abs_mag_sampleA.PNG" alt="Sample A Absolute Magnitude Distribution">
+  </div>
+  <div>
+    <img class="img-fluid" src="../images/abs_mag_sampleB.PNG" alt="Sample B Absolute Magnitude Distribution">
+  </div>
+  <div>
+    <img class="img-fluid" src="../images/size_dist_sampleA.PNG" alt="Sample A Physical Size Distribution">
+  </div>
+  <div>
+    <img class="img-fluid" src="../images/size_dist_sampleB.PNG" alt="Sample B Physical Size Distribution">
+  </div>
+  <div>
+    <img class="img-fluid" src="../images/surface_brightness_sampA.PNG" alt="Sample A Surface Brightness Distribution">
+  </div>
+  <div>
+    <img class="img-fluid" src="../images/surface_brightness_sampB.PNG" alt="Sample B Surface Brightness Distribution">
+  </div>
+</div>
+
+The galaxies in Sample A are more luminous than those in Sample B given the Absolute Magnitude distributions. This makes sense when you also look at the physical size distributions of the two samples, since Sample A has more larger galaxies than Sample B. The galaxies in Sample B lean toward a slightly higher surface brightness than those in Sample A, which might seem surprising given the galaxies in Sample A are more luminous overall, however, surface brightness is a measure of luminosity emitted per unit surface area. Thus, since the galaxies in Sample B tend to be physically smaller than those in Sample A, it makes sense that the surface brightness, or luminosity emitted per unit surface area is slightly higher than the larger galaxies in sample A. These differences in luminosity, size, and surface brightness between Sample A and Sample B are consistent with the expected differences between early-type (elliptical and lenticular) and late-type (spiral) galaxies, where early-type galaxies tend to be larger, more luminous, and less dense than late-type galaxies.
 
