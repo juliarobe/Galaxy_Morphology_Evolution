@@ -61,19 +61,6 @@ Using sample A  and sample B from the data I downloaded from SDSS, I use my K(z)
 
 ## Resulting Distributions:
 
-<style>
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-}
-</style>
 
 <div class="image-grid">
   <div>
